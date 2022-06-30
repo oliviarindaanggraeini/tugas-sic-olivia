@@ -1,0 +1,67 @@
+Microsoft Windows [Version 10.0.19042.685]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+C:\Users\Admin\Downloads\tugas sic olivia>cd "git basic"
+
+C:\Users\Admin\Downloads\tugas sic olivia\git basic>git init
+Initialized empty Git repository in C:/Users/Admin/Downloads/tugas sic olivia/git basic/.git/
+
+C:\Users\Admin\Downloads\tugas sic olivia\git basic>git add .
+
+C:\Users\Admin\Downloads\tugas sic olivia\git basic>git commit -m "adding first.txt"
+[master (root-commit) bb6ca74] adding first.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 first.txt.txt
+
+C:\Users\Admin\Downloads\tugas sic olivia\git basic>echo>second.txt
+
+C:\Users\Admin\Downloads\tugas sic olivia\git basic>git add .
+
+C:\Users\Admin\Downloads\tugas sic olivia\git basic>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   second.txt
+
+
+C:\Users\Admin\Downloads\tugas sic olivia\git basic>git commit -m "adding second.txt"
+[master 11a55fe] adding second.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 second.txt
+
+C:\Users\Admin\Downloads\tugas sic olivia\git basic>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Admin\Downloads\tugas sic olivia\git basic>git add .
+
+C:\Users\Admin\Downloads\tugas sic olivia\git basic>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    first.txt.txt
+
+
+C:\Users\Admin\Downloads\tugas sic olivia\git basic>git commit -m "removing first.txt"
+[master c64c150] removing first.txt
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 first.txt.txt
+
+C:\Users\Admin\Downloads\tugas sic olivia\git basic>git log
+commit c64c150ed8c88947b9da4f5978b2906c56f9d5ec (HEAD -> master)
+Author: oliviarindaanggraeini <oliviarindaanggraeini@gmail.com>
+Date:   Thu Jun 30 14:03:13 2022 +0700
+
+    removing first.txt
+
+commit 11a55fe234fb5a9626e94f2d8cedc9ac5148a642
+Author: oliviarindaanggraeini <oliviarindaanggraeini@gmail.com>
+Date:   Thu Jun 30 14:02:10 2022 +0700
+
+    adding second.txt
+
+commit bb6ca745182e75b6df89d8a688402f03832023da
+Author: oliviarindaanggraeini <oliviarindaanggraeini@gmail.com>
+Date:   Thu Jun 30 14:01:27 2022 +0700
+
+    adding first.txt
